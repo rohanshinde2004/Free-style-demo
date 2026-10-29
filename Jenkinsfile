@@ -27,7 +27,6 @@ pipeline {
         stage('package'){
             steps{
                 sh 'mvn -B -ntp package -DskipTests'
-                sh 'ls -lrt target'
                 //package the compiled code in its distributable format, such as a JAR.
             }
         }
